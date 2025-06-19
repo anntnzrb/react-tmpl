@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+count.txt
+.env
+.claude/
+.vscode/
+*.zip
+
+# TanStack Router generated files
+routeTree.gen.ts
+.tanstack

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
+@import "tailwindcss";
+
+/* CSS Custom Properties for dynamic colors */
+:root {
+  --color-green-600: rgb(22 163 74);
+  --color-red-600: rgb(220 38 38);
+  --color-green-100: rgb(220 252 231);
+  --color-green-800: rgb(22 101 52);
+  --color-red-100: rgb(254 226 226);
+  --color-red-800: rgb(153 27 27);
+  --color-yellow-100: rgb(254 249 195);
+  --color-yellow-800: rgb(133 77 14);
+  --color-blue-100: rgb(219 234 254);
+  --color-blue-800: rgb(30 64 175);
+  --color-gray-100: rgb(243 244 246);
+  --color-gray-800: rgb(31 41 55);
+}
+
+body {
+  @apply m-0;
+  font-family: "Ubuntu Sans Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

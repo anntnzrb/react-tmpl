@@ -1,0 +1,59 @@
+{
+  "name": "react-tmpl",
+  "version": "0.0.1",
+  "description": "React TansStack template",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build && tsc",
+    "clean": "git clean -fdx",
+    "dev": "vite --port 3000",
+    "fmt": "prettier --write .",
+    "lint": "tsc --noEmit && oxlint --deny-warnings",
+    "serve": "vite preview",
+    "start": "vite --port 3000",
+    "zip": "git archive --format=zip -9 --output=zipped.zip HEAD"
+  },
+  "dependencies": {
+    "@effect/platform": "^0.85.2",
+    "@tanstack/react-router": "^1.121.27",
+    "effect": "^3.16.8",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.10",
+    "@tanstack/react-router-devtools": "^1.121.27",
+    "@tanstack/router-plugin": "^1.121.29",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "oxlint": "^1.2.0",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4.1.10",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "overrides": {
+    "@tanstack/react-router": "^1.121.2"
+  },
+  "oxlint": {
+    "rules": {
+      "import/no-unused-modules": "error",
+      "import/no-unresolved": "error",
+      "unicorn/no-unused-properties": "error",
+      "typescript/no-unused-vars": "error",
+      "typescript/no-unused-expressions": "error",
+      "react/jsx-no-unused-vars": "error",
+      "react-hooks/exhaustive-deps": "error",
+      "react-hooks/rules-of-hooks": "error",
+      "no-unused-vars": "error",
+      "no-unused-expressions": "error",
+      "no-unreachable": "error",
+      "no-unreachable-code": "error",
+      "prefer-const": "error",
+      "no-var": "error"
+    }
+  }
+}
